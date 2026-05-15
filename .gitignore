@@ -1,3 +1,4 @@
+plans/
 # === Runtime state / sessions (per-machine, sensitive) ===
 sessions/
 session-env/
