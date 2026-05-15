@@ -1,0 +1,56 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(ggrep:*)",
+      "Bash(ps:*)",
+      "Bash(pwd)",
+      "Bash(whoami)",
+      "Bash(which:*)",
+      "Bash(wc:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(less:*)",
+      "Bash(more:*)",
+      "Bash(file:*)",
+      "Bash(du:*)",
+      "Bash(df:*)",
+      "Bash(uname:*)",
+      "Bash(date)",
+      "Bash(echo:*)",
+      "Bash(sort:*)",
+      "Bash(unique:*)",
+      "Bash(stat:*)",
+      "Agent"
+    ],
+    "ask":[
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(rm -r:*)",
+      "Bash(sudo:*)",
+      "Bash(su:*)",
+      "Bash(chmod:*)",
+      "Bash(chown:*)",
+      "Read(./.env*)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)"
+    ],
+    "defaultMode": "default"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/edy/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "jdtls-lsp@claude-plugins-official": true
+  },
+  "autoMemoryEnabled": true,
+  "skipDangerousModePermissionPrompt": true
+}

@@ -1,0 +1,1 @@
+/Users/edy/projects/me/tech/cc-week-report/skills/weekly-report.md

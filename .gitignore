@@ -1,0 +1,32 @@
+# === Runtime state / sessions (per-machine, sensitive) ===
+sessions/
+session-env/
+tasks/
+telemetry/
+usage-data/
+file-history/
+backups/
+paste-cache/
+cache/
+downloads/
+shell-snapshots/
+projects/
+
+# === Auth & credentials ===
+.env
+.env.*
+*.pem
+*.key
+secrets/
+mcp-needs-auth-cache.json
+
+# === Logs & history ===
+history.jsonl
+*.log
+
+# === Local caches & stats ===
+stats-cache.json
+.last-cleanup
+
+# === Plugins are locally installed/managed ===
+plugins/

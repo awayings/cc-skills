@@ -1,0 +1,47 @@
+{
+  "connections": {
+    "dev": {
+      "host": "localhost",
+      "port": 3306,
+      "database": "myapp_dev",
+      "username": "dev_user",
+      "password": "${MYSQL_DEV_PASSWORD}",
+      "options": {
+        "charset": "utf8mb4",
+        "connectTimeout": 10000
+      }
+    },
+    "test": {
+      "host": "localhost",
+      "port": 3306,
+      "database": "myapp_test",
+      "username": "test_user",
+      "password": "${MYSQL_TEST_PASSWORD}"
+    }
+  },
+  "default_connection": "dev",
+  "security": {
+    "max_rows_return": 1000,
+    "query_timeout_ms": 30000,
+    "log_queries": true,
+    "forbidden_operations": [
+      "DROP DATABASE",
+      "DROP TABLE",
+      "TRUNCATE TABLE"
+    ],
+    "confirm_operations": [
+      "INSERT",
+      "UPDATE",
+      "DELETE",
+      "ALTER",
+      "CREATE",
+      "RENAME"
+    ],
+    "auto_limit": {
+      "enabled": true,
+      "default_limit": 100,
+      "max_limit": 1000,
+      "skip_for_aggregates": true
+    }
+  }
+}
